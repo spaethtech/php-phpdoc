@@ -1,0 +1,22 @@
+{
+    "name": "spaethtech/phpdoc-markdown",
+    "description": "A phpDocumentor markdown template for our projects.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ryan Spaeth",
+            "email": "rspaeth@spaethtech.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "SpaethTech\\": "src/",
+            "Examples\\": "examples/",
+            "Tests\\": "tests/"
+        }
+    }
+}
