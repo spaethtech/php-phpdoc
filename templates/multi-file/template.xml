@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template>
+    <name>multi-file</name>
+    <author>Ryan Spaeth</author>
+    <email>rspaeth@spaethtech.com</email>
+    <version>1.0.0</version>
+    <transformations>
+        <!--
+        <transformation writer="FileIo" query="copy" source="assets" artifact="docs/assets"/>
+        -->
+        <transformation writer="twig" source="index.md.twig" artifact="README.md"/>
+        <transformation writer="twig" query="indexes.classes" source="class.md.twig" artifact="docs/{{FullyQualifiedStructuralElementName}}.md"/>
+        <transformation writer="twig" query="indexes.traits" source="trait.md.twig" artifact="docs/{{FullyQualifiedStructuralElementName}}.md"/>
+        <transformation writer="twig" query="indexes.interfaces" source="interface.md.twig" artifact="docs/{{FullyQualifiedStructuralElementName}}.md"/>
+    </transformations>
+    <parameters>
+        <parameter key="twig-debug">true</parameter>
+        <!--
+        <parameter description="description" value="This is a description"/>
+        -->
+    </parameters>
+</template>
