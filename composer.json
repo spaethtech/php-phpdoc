@@ -1,5 +1,5 @@
 {
-    "name": "spaethtech/phpdoc-markdown",
+    "name": "spaethtech/phpdoc",
     "description": "A phpDocumentor markdown template for our projects.",
     "type": "library",
     "license": "MIT",
